@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VEXTONY | Sovereign Information Megacity</title>
+    <title>VEXTONY | Sovereign Gateway</title>
     <style>
         body { background: #050505; color: #D4AF37; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; text-align: center; }
         .gate { border: 2px solid #D4AF37; padding: 50px; border-radius: 20px; box-shadow: 0 0 100px rgba(212, 175, 55, 0.2); }
-        h1 { font-size: 5rem; letter-spacing: 15px; margin: 0; }
+        h1 { font-size: clamp(2rem, 10vw, 5rem); letter-spacing: 15px; margin: 0; }
         .pillars { margin-top: 30px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
-        .pillar-link { color: #D4AF37; text-decoration: none; border: 1px solid #D4AF37; padding: 10px 20px; border-radius: 5px; font-size: 0.8rem; text-transform: uppercase; }
-        .pillar-link:hover { background: #D4AF37; color: #000; }
+        .btn { color: #D4AF37; text-decoration: none; border: 1px solid #D4AF37; padding: 10px 25px; border-radius: 5px; font-size: 0.8rem; text-transform: uppercase; transition: 0.3s; }
+        .btn:hover { background: #D4AF37; color: #000; box-shadow: 0 0 20px #D4AF37; }
     </style>
 </head>
 <body>
     <div class="gate">
         <h1>VEXTONY</h1>
-        <p style="letter-spacing: 5px; color: #C0C0C0;">SOVEREIGN MEGACITY</p>
+        <p style="letter-spacing: 5px; color: #C0C0C0; margin-top: 10px;">SOVEREIGN INFORMATION MEGACITY</p>
         <div class="pillars">
-            <a href="quantum-ai/" class="pillar-link">Quantum AI</a>
-            <a href="digital-gold/" class="pillar-link">Digital Gold</a>
-            <a href="divine-logic/" class="pillar-link">Divine Logic</a>
+            <a href="quantum-ai/" class="btn">Quantum AI</a>
+            <a href="digital-gold/" class="btn">Digital Gold</a>
+            <a href="divine-logic/" class="btn">Divine Logic</a>
         </div>
     </div>
 </body>
