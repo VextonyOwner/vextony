@@ -38,5 +38,23 @@
             <a href="cyber-fortress-prime/" class="btn">Cyber Fortress</a>
         </div>
     </div>
+    <script>
+    /* VEXTONY NEURAL CORE: THE SEARCH & GLOW ENGINE */
+    const searchInput = document.querySelector('.search-input');
+    searchInput.addEventListener('input', (e) => {
+        let term = e.target.value.toLowerCase();
+        let buttons = document.querySelectorAll('.btn');
+        buttons.forEach(btn => {
+            if(btn.innerText.toLowerCase().includes(term)) {
+                btn.style.display = "inline-block";
+                btn.style.boxShadow = "0 0 30px #FFD700";
+                btn.style.borderColor = "#FFF5B7";
+            } else {
+                btn.style.display = "none";
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
